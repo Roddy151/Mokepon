@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>MOKEPON!</title>
+        <link rel="stylesheet" href="./styles.css">
+
+    </head>
+    <body>
+        
+
+        <section id="seleccionar-mascota">
+            <h1 class="titulo">
+                <p>Mokepon's</p>
+                <p>Game</p>
+            </h1>
+
+            <h2 class="subtitulo">Elige a tu mascota:</h2>
+
+            <div id="contenedorTarjetas" class="tarjetas"></div>
+            
+            <button id="boton-mascota">Continuar</button>
+
+        </section>
+        
+        <section id="seleccionar-ataque"> 
+             
+            <div class="derecho">
+
+                <div id="nombre-mascota-jugador"> 
+                    <span id="mascota-jugador"></span> 
+                    <img id="imagen-mascota" src="" alt="">
+                    <span id="vida-jugador"></span>
+                </div>
+                
+                <div id="nombre-mascota-enemigo"> 
+                    <span id="mascota-enemigo"> </span> 
+                    <img id="imagen-mascota-enemigo" src="" alt="">
+                    <span id="vida-enemigo"></span>
+                </div>
+                
+            </div>
+
+            <div class="izquierdo">    
+                <h1 class="titulo">
+                    <p>Mokepon's</p>
+                    <p>Game</p>
+                </h1>
+
+                <h2 class="subtitulo">Elige tu ataque:</h2>
+                
+                <div id="contenedorAtaques" class="botones-ataque"></div>
+                
+               <div id="mensajes-y-reiniciar">
+                    <div id="mensaje">
+                        <p id="resultado-contienda">Ataca</p>
+                    </div>
+
+                    <div id="reiniciar">
+                        <button id="boton-reiniciar">Reiniciar</button>
+                    </div>
+               </div> 
+               
+                <div class="ataques-por-jugador">
+                    
+                    <div class="ataque-jugador">
+                        <p id="mascota-jugador1"></p>
+                        <div id="ataque-del-jugador"></div>
+                    </div>
+                        
+                    <div class="ataque-enemigo">
+                        <p id="mascota-enemigo1"></p>
+                        <div id="ataque-del-enemigo"></div>
+                    </div>
+                    
+                </div>  
+                
+                
+            </div> 
+        </section>
+        <script src="./js/mokepon.js"></script>
+        
+    </body>
+
+</html>
