@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <title>MOKEPON!</title>
         <link rel="stylesheet" href="./styles.css">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
         
@@ -15,14 +15,27 @@
                 <p>Game</p>
             </h1>
 
-            <h2 class="subtitulo">Elige a tu mascota preferida:</h2>
+            <h2 class="subtitulo">Elige a tu mascota:</h2>
 
             <div id="contenedorTarjetas" class="tarjetas"></div>
             
             <button id="boton-mascota">Continuar</button>
 
         </section>
+
+        <section id="ver-mapa">
+            <h2 class="subtitulo2 ">Recorre el mapa con tu Mokepon</h2>
+            <canvas id="mapa"> </canvas>
+            <button onmouseup="detenerMoviento()" onmousedown="moverArriba()">Arriba</button onmouseup="detenerMoviento()">
+            <div>
+                <button onmouseup="detenerMoviento()" onmousedown="moverIzquierda()">Izquierda</button onmouseup="detenerMoviento()">
+                <button onmouseup="detenerMoviento()" onmousedown="moverAbajo()">Abajo</button onmouseup="detenerMoviento()">
+                <button onmouseup="detenerMoviento()" onmousedown="moverDerecha()">Derecha</button>
+            </div>
+        </section>
         
+        
+
         <section id="seleccionar-ataque"> 
              
             <div class="derecho">
